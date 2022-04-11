@@ -40,3 +40,42 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 };
 
 console.log('project wired!')
+
+
+document.querySelector("nav a:nth-of-type(1)").textContent=siteContent["nav"]["nav-item-1"]
+document.querySelector("nav a:nth-of-type(2)").textContent=siteContent["nav"]["nav-item-2"]
+document.querySelector("nav a:nth-of-type(3)").textContent=siteContent["nav"]["nav-item-3"]
+document.querySelector("nav a:nth-of-type(4)").textContent=siteContent["nav"]["nav-item-4"]
+document.querySelector("nav a:nth-of-type(5)").textContent=siteContent["nav"]["nav-item-5"]
+document.querySelector("nav a:nth-of-type(6)").textContent=siteContent["nav"]["nav-item-6"]
+
+document.querySelector("#logo-img").src = siteContent["images"]["logo-img"]
+document.querySelector(".cta-text h1").textContent=siteContent["cta"]["h1"]
+document.querySelector(".cta-text button").textContent=siteContent["cta"]["button"]
+document.querySelector("#cta-img").src=siteContent["images"]["cta-img"]
+
+document.querySelector(".top-content .text-content:nth-of-type(1) h4").textContent =siteContent["main-content"]["features-h4"]
+document.querySelector(".top-content .text-content:nth-of-type(2) h4").textContent = siteContent["main-content"]["about-h4"]
+document.querySelector(".top-content .text-content:nth-of-type(1) p").textContent =siteContent["main-content"]["features-content"]
+document.querySelector(".top-content .text-content:nth-of-type(2) p").textContent =siteContent["main-content"]["about-content"]
+
+document.querySelector("#middle-img").src=siteContent["images"]["accent-img"]
+
+document.querySelector(".bottom-content .text-content:nth-of-type(1) h4").textContent = siteContent["main-content"]["services-h4"]
+document.querySelector(".bottom-content .text-content:nth-of-type(2) h4").textContent = siteContent["main-content"]["product-h4"]
+document.querySelector(".bottom-content .text-content:nth-of-type(3) h4").textContent = siteContent["main-content"]["vision-h4"]
+document.querySelector(".bottom-content .text-content:nth-of-type(1) p").textContent = siteContent["main-content"]["services-content"]
+document.querySelector(".bottom-content .text-content:nth-of-type(2) p").textContent = siteContent["main-content"]["product-content"]
+document.querySelector(".bottom-content .text-content:nth-of-type(3) p").textContent = siteContent["main-content"]["vision-content"]
+
+document.querySelector(".contact h4").textContent=siteContent["contact"]["contact-h4"]
+document.querySelector(".contact p:nth-of-type(1)").textContent=siteContent["contact"]["address"]
+document.querySelector(".contact p:nth-of-type(2)").textContent=siteContent["contact"]["phone"]
+document.querySelector(".contact p:nth-of-type(3)").textContent=siteContent["contact"]["email"]
+
+document.querySelector("footer a").textContent=siteContent["footer"]["copyright"]
+document.querySelector("footer a").classList.add("bold")
+
+const italics = document.querySelectorAll("nav a")
+italics.forEach(item => item.classList.add("italic"))
+
